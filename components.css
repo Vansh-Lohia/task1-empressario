@@ -1,0 +1,98 @@
+.event-card {
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.partner-logo {
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.05);
+    border-color: #2c5aa0;
+}
+
+.team-member {
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-3px);
+}
+
+.member-photo {
+    transition: border-color 0.3s ease;
+}
+
+.team-member:hover .member-photo {
+    border-color: #2c5aa0;
+}
+
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.nav-list a {
+    position: relative;
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2c5aa0;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+.cta-button {
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-to-top {
+    transition: all 0.3s ease;
+}
+
+.event-card h3 {
+    color: #2c5aa0;
+}
+
+.team-member h3 {
+    color: #1f2937;
+}
+
+.footer-logo img {
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+    .event-card:hover {
+        transform: none;
+    }
+    
+    .partner-logo:hover {
+        transform: none;
+    }
+    
+    .team-member:hover {
+        transform: none;
+    }
+}
